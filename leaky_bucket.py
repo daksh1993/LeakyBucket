@@ -48,5 +48,11 @@ burst_size = 15
 bursty_traffic = []
 for i in range(num_packets):
     bursty_traffic.append(f"Pkt_{i+1}")
-
+print("Case 1 :")
 leaky_bucket_simulator(bursty_traffic, bucket_capacity=10, leak_rate=8)
+
+print("Case 1 :")
+leaky_bucket2simulator(bursty_traffic, bucket_capacity=10, leak_rate=12)
+
+print("Case 3 :")
+leaky_bucket_simulator(bursty_traffic, bucket_capacity=10, leak_rate=5)
